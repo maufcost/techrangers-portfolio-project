@@ -1,0 +1,194 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap');
+
+:root {
+    --dark-blue: #252733;
+    --mid-blue: #333645;
+    --light-blue: #65697d;
+    --light-yellow: #eba444;
+    --standard-white: #f3f3f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--dark-blue) !important;
+    font-family: 'Merriweather Sans', sans-serif !important;
+    color: var(--standard-white) !important;
+}
+
+p {
+    font-weight: lighter;
+}
+
+canvas {
+    box-shadow: 0 0 10px var(--dark-blue);
+}
+
+.hr-custom {
+    height: 5px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: var(--light-yellow);
+}
+
+/* Header and navigation */
+header {
+    background-color: var(--mid-blue);
+}
+
+#master-header {
+    background-image: url("images/me.png");
+    min-height: 80vh;
+}
+
+#showcase h1 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.showcase-content {
+    margin-top: 10%;
+}
+
+/* As seen on */
+#as-seen-on {
+    color: var(--light-blue);
+    padding: 30px 0;
+}
+
+#as-seen-on a{
+    font-weight: bold;
+    color: var(--light-blue);
+}
+
+#as-seen-on a:hover {
+    color: #fff;
+    transition: 0.8s;
+}
+
+#as-seen-on .winner {
+    background-color: var(--light-yellow);
+    color: var(--dark-blue);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#as-seen-on .winner:hover {
+    background-color: yellow;
+}
+
+#as-seen-on h5,
+#contact h5,
+#contact a,
+#contact a:hover,
+#kids-area h5 {
+    color: var(--standard-white);
+}
+
+/* Projects */
+#projects {
+    padding: 30px 0;
+    background-color: var(--mid-blue);
+}
+
+#projects h6 {
+    font-weight: bold;
+}
+
+#projects a {
+    color: var(--standard-white);
+}
+
+/* Contact */
+#contact {
+    padding: 30px 0;
+}
+
+#contact p, #kids-area p {
+    color: var(--light-blue);
+}
+
+#contact ul {
+    list-style: none;
+}
+
+.tweets {
+    font-size: 0.8em;
+    border: 1px solid var(--light-blue);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.tweets:hover {
+    background-color: var(--mid-blue);
+}
+
+.tweet {
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+.tweet:hover {
+    background-color: #EEEEEE;
+    transition: 0.5s;
+}
+
+.tweet:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.tweet img {
+    border-radius: 50%;
+}
+
+.tweet h6 {
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+/* Kids Area */
+#kids-area {
+    padding: 30px 0;
+    background-color: var(--mid-blue);
+}
+
+#kids-area .special-text {
+    color: var(--standard-white);
+}
+
+/* Footer */
+footer {
+    padding: 30px 0;
+    color: var(--light-blue);
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    color: var(--light-blue);
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Applied only on screens <= 768px */
+    .hr-custom {
+        margin: 0 auto;
+    }
+
+    .showcase-content {
+        margin-top: 30%;
+    }
+}
