@@ -6,7 +6,7 @@ function setup() {
     canvas.parent("canvas-holder");
     background(37, 39, 51);
 
-    socket = io.connect("http://localhost:3000");
+    socket = io.connect("https://vast-mountain-31312.herokuapp.com/");
 
     socket.on("mouse", newDrawing);
 }
