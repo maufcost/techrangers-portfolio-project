@@ -23,7 +23,7 @@ async function getTweets() {
                 const tweet = {
                     text: data[i].text,
                     userHandle: data[i].user.screen_name,
-                    profileImageUrl: data[i].user.profile_image_url
+                    profileImageUrl: data[i].user.profile_image_url_https
                 };
                 tweets.push(tweet);
             }

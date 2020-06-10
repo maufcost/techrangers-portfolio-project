@@ -42,7 +42,9 @@ header {
 
 #master-header {
     background-image: url("images/me.png");
+    background-repeat: no-repeat;
     min-height: 80vh;
+    background-position: cover;
 }
 
 #showcase h1 {
