@@ -44,7 +44,7 @@ header {
     background-image: url("images/me.png");
     background-repeat: no-repeat;
     min-height: 80vh;
-    background-position: cover;
+    background-size: cover;
 }
 
 #showcase h1 {
